@@ -20,7 +20,7 @@ class DosenState extends State<Dosen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Dosen'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.red,
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
@@ -39,7 +39,7 @@ class DosenState extends State<Dosen> {
         constraints: BoxConstraints.expand(),
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/BerandaBackground.jpeg"),
+            image: AssetImage("assets/BerandaBackground.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -69,10 +69,10 @@ class DosenState extends State<Dosen> {
               gender: dosen.jenis_kelamin,
               role: dosen.jabatan,
               thumbnail: Image(
-                image: AssetImage("assets/Profile.jpeg"),
+                image: AssetImage("assets/Profile.png"),
               ),
             ),
-            color: Color.fromRGBO(242, 238, 238, 1),
+            color: Colors.yellow,
           );
         },
       );
